@@ -104,6 +104,7 @@ def make_paths(train_img_dir, test_img_dir):
 
     return train_imgs_paths, test_imgs_paths
 def make_data_loaders(train_imgs_paths, test_imgs_paths, batch_size=300):
+
     # The DataLoaders contain the ImageDataset class
     train_imgs_dataloader = DataLoader(
         ImageDataset(train_imgs_paths, idxs_train, transform),
